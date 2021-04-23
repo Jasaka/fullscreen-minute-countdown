@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "Dancing Script";
+    src: url('../assets/fonts/dancing_script/DancingScript-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('../assets/fonts/open_sans/OpenSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('../assets/fonts/open_sans/OpenSans-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: var(--light);
+    font-family: "Source Code Pro ExtraLight", sans-serif;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+html {
+    --primary: #99B870;
+    --secondary: #8290B8;
+    --accent: #b8705e;
+    --primary-dark: #546B37;
+    --accent-dark: #6B453C;
+    --dark: #14161C;
+    --light: #FFFFFF;
+    --black: #000000;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+
+.float_none {
+    float: none;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Source Code Pro ExtraLight", sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 7em;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+#landing {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow-y: hidden;
+}
+
+#title {
+    text-align: center;
+    position: absolute;
+    top: 40vh;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title p {
+    font-size: 1.5em;
+}
+#canvas{
+    height: 100%;
+}
